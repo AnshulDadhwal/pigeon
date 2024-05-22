@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Home</a></li>
+            <li><a href="/contacts">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Chat</h1>
+    <p>Welcome to Pigeon ID</p>
+    <h2>Chat History</h2>
+    <form action="/chat/{{ pigeon_id }}/{{ receiver_id }}" method="POST">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <input type="submit" value="Send">
+    </form>
+    <h3>Received Messages:</h3>
+</body>
+</html>
